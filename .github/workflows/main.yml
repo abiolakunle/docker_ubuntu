@@ -29,5 +29,6 @@ jobs:
       - name: Check docker version
         run: |
           docker -v
-          sudo snap install --classic heroku
+          curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+          heroku --version
           docker build -t mssql_db .
