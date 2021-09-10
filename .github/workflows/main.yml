@@ -31,4 +31,5 @@ jobs:
           docker -v
           curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
           heroku --version
+          heroku login 
           docker build -t mssql_db .
